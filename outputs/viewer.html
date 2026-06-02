@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 2 Data Visualization and Storytelling</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --ink: #111827;
+      --muted: #4b5563;
+      --accent: #0f766e;
+      --line: #d1d5db;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #eef6f5 0%, var(--bg) 30%, #ffffff 100%);
+      color: var(--ink);
+    }
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    .hero {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+    }
+    h1 { margin: 0 0 8px; font-size: 32px; }
+    .sub { color: var(--muted); margin: 0; line-height: 1.5; }
+    .meta {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      background: #f9fafb;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+    }
+    .label { display:block; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+    .value { display:block; margin-top: 6px; font-size: 20px; font-weight: 700; }
+    .section {
+      margin-top: 26px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(17, 24, 39, 0.05);
+    }
+    .section h2 { margin: 0 0 8px; font-size: 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+    figure {
+      margin: 0;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    figcaption {
+      padding: 12px 14px;
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 14px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Task 2: Data Visualization and Storytelling</h1>
+      <p class="sub">Browser-friendly preview of the generated sales story. The same dataset and insights are also exported as a PDF report in the outputs folder.</p>
+      <a class="button" href="task_2_data_visualization_storytelling_report.pdf">Open PDF report</a>
+      <div class="meta">
+        <div class="card"><span class="label">Focus</span><span class="value">Sales story</span></div>
+        <div class="card"><span class="label">Tools</span><span class="value">Tableau / Power BI</span></div>
+        <div class="card"><span class="label">Output</span><span class="value">Charts + PDF</span></div>
+        <div class="card"><span class="label">Dataset</span><span class="value">Superstore.csv</span></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Storyline</h2>
+      <p class="sub">The visual narrative shows that sales are growing, but profit depends heavily on category mix and discount discipline. The key takeaway is to protect margin, especially where discounts are eating into profit.</p>
+    </div>
+
+    <div class="section">
+      <h2>Charts</h2>
+      <div class="grid">
+        <figure>
+          <img src="charts/01_monthly_trend.png" alt="Monthly sales and profit trend" />
+          <figcaption>Monthly trend: sales rise over time, but profit is more uneven.</figcaption>
+        </figure>
+        <figure>
+          <img src="charts/02_region_category.png" alt="Sales by region and profit by category" />
+          <figcaption>Regional and category view: identifies where revenue is concentrated and which categories protect margin.</figcaption>
+        </figure>
+        <figure>
+          <img src="charts/03_discount_impact.png" alt="Discount impact on profit" />
+          <figcaption>Discount pressure: higher discounts reduce average profit per order.</figcaption>
+        </figure>
+        <figure>
+          <img src="charts/04_discount_vs_profit.png" alt="Scatter plot of discount versus profit" />
+          <figcaption>Discount vs profit: deep discounts create negative outliers, especially in Furniture.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
