@@ -27,6 +27,21 @@ This project turns a Superstore-style sales dataset into a visual story that hig
 
 3. Open the generated PDF in `outputs/`.
 
+## Live viewer on GitHub
+
+You can preview the report and charts directly from this repository:
+
+- Viewer page (in the repo): https://github.com/yandrapallimansha-mic-23/task-2-data-storytelling-da/blob/main/outputs/viewer.html
+- PDF report: https://github.com/yandrapallimansha-mic-23/task-2-data-storytelling-da/blob/main/outputs/task_2_data_visualization_storytelling_report.pdf
+
+If you want this viewer served as a GitHub Pages site (clean URL), I can enable Pages for this repo — I will need a GitHub Personal Access Token (PAT) with `repo` and `admin:repo_hook` (or `repo` scope) to make that change for you. If you prefer, follow these steps locally:
+
+1. In the repository on GitHub, go to Settings → Pages.
+2. Under "Source", choose the `main` branch and `/outputs` folder (or the `root`) and save.
+3. After a few minutes the site will be available at `https://<username>.github.io/<repo>/outputs/viewer.html` (or at the Pages root depending on configuration).
+
+Tell me if you want me to enable GitHub Pages (paste a PAT), or I can provide the exact steps you can run locally.
+
 ## Story angle
 
 The report tells this story:
