@@ -19,6 +19,12 @@ Thumbs.db
 data/
 outputs/
 
+# Keep outputs in the working tree but allow specific published assets
+!outputs/viewer.html
+!outputs/task_2_data_visualization_storytelling_report.pdf
+!outputs/charts/
+!outputs/charts/*
+
 # Report files
 *.pdf
 
